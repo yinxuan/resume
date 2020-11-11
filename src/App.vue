@@ -32,8 +32,8 @@
     overflow-x: hidden;
     .router-view {
       background: url("https://www.the-alley.hk/images/page/page-bg_00.jpg") 50% 50% no-repeat;
-      width: 100%;
       padding: 100px 50px;
+      background-size: cover;
     }
   }
 </style>

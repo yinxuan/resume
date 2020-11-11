@@ -1,6 +1,6 @@
 <template>
   <div class="home-view">
-    个人简介
+    基本简介
   </div>
 
 </template>

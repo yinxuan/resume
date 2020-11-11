@@ -11,15 +11,15 @@
                 </div>
                 <div class="top-bar-nav-cell-word">
                     <div @click="routerHome">
-                        个人简介
+                        基本简介
                     </div>
                     <div @click="routerAbout">
                         我的作品
                     </div>
-                    <div @click="routerAbout">
+                    <div @click="routerSpecial">
                         个人特长
                     </div>
-                    <div @click="routerAbout">
+                    <div @click="routerContact">
                         联系我吧
                     </div>
                 </div>
@@ -48,6 +48,12 @@
             const routerAbout = () => {
                 router.push("/about")
             }
+            const routerSpecial = () => {
+                router.push("/special")
+            }
+            const routerContact = () => {
+                router.push("/contact")
+            }
             watch(() => {
                 console.log(router.currentRoute.value.name)
             },{
@@ -58,6 +64,8 @@
             return {
                 routerHome,
                 routerAbout,
+                routerSpecial,
+                routerContact,
                 title
             }
         }
@@ -101,11 +109,18 @@
                 .top-bar-nav-cell-word {
                     display: flex;
                     color: #2b3d41;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 600;
                     div {
-                        padding: 0 20px;
+                        padding-bottom: 5px;
+                        margin-right: 25px;
+                        border-bottom: 3px #2b3d41 solid;
+                        &:hover,&.active, &:focus {
+                            color: #c9bc9c;
+                            border-bottom: 3px #c9bc9c solid;
+                        }
                     }
+
                 }
             }
 
