@@ -148,9 +148,6 @@ module.exports = {
                 }
             }
         },
-        build: {
-            assetsPublicPath: './resume'
-        },
         before: () => {}
     },
     // 第三方插件配置
