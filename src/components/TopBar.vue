@@ -11,7 +11,7 @@
                 </div>
                 <div class="top-bar-nav-cell-word">
                     <div @click="routerHome">
-                        基本简介
+                        基本简介1111
                     </div>
                     <div @click="routerAbout">
                         我的作品
